@@ -2316,7 +2316,7 @@ GetDialogLineCount() {
 }
 
 GetDialogLine__(index) {
-	if (GetDialogLineCount > index)
+	if (GetDialogLineCount() > index)
 		return ""
 
 	dwPointer := GetDialogStructPtr()
@@ -4046,7 +4046,7 @@ __unicodeToAnsi(wString, nLen = 0) {
 	}
 	showGameText("~b~~h~LOADING CORRECTIONAL REHABILITATION CODE SECTION 1...~n~~g~PLEASE WAIT", 2000, 5)
 	Sleep, 2000
-    ShowDialog(5, "Section 1. Class I Offenses", "OFFENSES`tPUNISHMENT`n{FFFFFF}(1)01. Murder`t{FF0000}180 Days ((240 minutes))`n{FFFFFF}(1)02. Attempted Murder`t{FF0000}90 Days ((180 minutes))`n{FFFFFF}(1)03. Assault With a Deadly Weapon`t{FF0000}40 Days ((115 minutes))`n{FFFFFF}(1)04. Assault and Battery`t{FF0000}30 Days ((100 minutes))`n{FFFFFF}(1)05. Torture`t{FF0000}90 Days ((100 minutes))`n{FFFFFF}(1)05. Rape`t{FF0000}90 Days ((100 minutes))`n{FFFFFF}(1)06. Hostage Taking`t{FF0000}140 Days ((240 minutes))`n{FFFFFF}(1)07. Possession of a Firearm`t{FF0000}30 Days ((100 minutes))`n{FFFFFF}(1)08. Possession of An Improvised Weapon`t{FF0000}21 Days ((60 minutes))`n{FFFFFF}(1)09. Manufacture of a Dangerous Weapon / Device`t{FF0000}12 Days ((45 minutes))`n{FFFFFF}(1)10. Arson`t{FF0000}30-50 Days (( 100-120 minutes ))`n{FFFFFF}(1)11. Riot`t{FF0000}90 Days (( 100 minutes ))`n{FFFFFF}(1)12. Attempted Escape`t{FF0000}260 Days ((120 minutes))`n{FFFFFF}(1)13. Escaping`t{FF0000}365 Days ((270 minutes))`n{FFFFFF}(1)14. Introduction Of Contraband`t{FF0000}5-14 Days ((20-50 minutes))`n{FFFFFF}(1)15. Possession of a Controlled Substance With Intent To Sell`t{FF0000}15 Days ((50 minutes))`n", "Close")
+    ShowDialog(5, "Section 1. Class I Offenses", "OFFENSES`tPUNISHMENT`n{FFFFFF}(1)01. Murder`t{FF0000}180 Days ((240 minutes))`n{FFFFFF}(1)02. Attempted Murder`t{FF0000}90 Days ((180 minutes))`n{FFFFFF}(1)03. Assault With a Deadly Weapon`t{FF0000}40 Days ((115 minutes))`n{FFFFFF}(1)04. Assault and Battery`t{FF0000}30 Days ((100 minutes))`n{FFFFFF}(1)05. Torture`t{FF0000}90 Days ((100 minutes))`n{FFFFFF}(1)05. Rape`t{FF0000}90 Days ((100 minutes))`n{FFFFFF}(1)06. Hostage Taking`t{FF0000}140 Days ((240 minutes))`n{FFFFFF}(1)07. Possession of a Firearm`t{FF0000}30 Days ((100 minutes))`n{FFFFFF}(1)08. Possession of An Improvised Weapon`t{FF0000}21 Days ((60 minutes))`n{FFFFFF}(1)09. Manufacture of a Dangerous Weapon / Device`t{FF0000}12 Days ((45 minutes))`n{FFFFFF}(1)10. Arson`t{FF0000}30-50 Days ((100-120 minutes))`n{FFFFFF}(1)11. Riot`t{FF0000}90 Days ((100 minutes))`n{FFFFFF}(1)12. Attempted Escape`t{FF0000}260 Days ((120 minutes))`n{FFFFFF}(1)13. Escaping`t{FF0000}365 Days ((270 minutes))`n{FFFFFF}(1)14. Introduction Of Contraband`t{FF0000}5-14 Days ((20-50 minutes))`n{FFFFFF}(1)15. Possession of a Controlled Substance With Intent To Sell`t{FF0000}15 Days ((50 minutes))`n", "Close")
 
     return
 }
@@ -4074,7 +4074,7 @@ __unicodeToAnsi(wString, nLen = 0) {
 	}
 	showGameText("~b~~h~LOADING CORRECTIONAL REHABILITATION CODE SECTION 3...~n~~g~PLEASE WAIT", 2000, 5)
 	Sleep, 2000
-    ShowDialog(5, "Section 3. Class III Offenses", "OFFENSES`tPUNISHMENT`n{FFFFFF}(3)01. Fortification to Avoid Apprehension`t{FF0000}20 Days (( 45 minutes ))`n{FFFFFF}(3)02. Providing False Information`t{FF0000}14 Days ((45 minutes))`n{FFFFFF}(3)03. Trespassing`t{FF0000}14 Days ((45 minutes))`n{FFFFFF}(3)04. Avoiding Custody`t{FF0000}7 Days ((30 minutes))`n{FFFFFF}(3)05. Vandalism`t{FF0000}7 Days ((30 minutes))`n{FFFFFF}(3)06. Intoxication/Under the Influence of a Controlled Substance`t{FF0000}3 Days ((20 minutes))`n{FFFFFF}(3)07. Theft`t{FF0000}5 Days ((15 minutes))`n{FFFFFF}(3)08. Theft of Canteen or Commissary Items`t{FF0000}7 Days ((20 minutes))`n{FFFFFF}(3)09. Disobeying Orders`t{FF0000}3 Days ((15 minutes))`n{FFFFFF}(3)10. Threatening or Intimidating Any Person`t{FF0000}2 Days ((10 minutes))`n", "Close")
+    ShowDialog(5, "Section 3. Class III Offenses", "OFFENSES`tPUNISHMENT`n{FFFFFF}(3)01. Fortification to Avoid Apprehension`t{FF0000}20 Days ((45 minutes))`n{FFFFFF}(3)02. Providing False Information`t{FF0000}14 Days ((45 minutes))`n{FFFFFF}(3)03. Trespassing`t{FF0000}14 Days ((45 minutes))`n{FFFFFF}(3)04. Avoiding Custody`t{FF0000}7 Days ((30 minutes))`n{FFFFFF}(3)05. Vandalism`t{FF0000}7 Days ((30 minutes))`n{FFFFFF}(3)06. Intoxication/Under the Influence of a Controlled Substance`t{FF0000}3 Days ((20 minutes))`n{FFFFFF}(3)07. Theft`t{FF0000}5 Days ((15 minutes))`n{FFFFFF}(3)08. Theft of Canteen or Commissary Items`t{FF0000}7 Days ((20 minutes))`n{FFFFFF}(3)09. Disobeying Orders`t{FF0000}3 Days ((15 minutes))`n{FFFFFF}(3)10. Threatening or Intimidating Any Person`t{FF0000}2 Days ((10 minutes))`n", "Close")
 
     return
 }
